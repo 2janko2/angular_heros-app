@@ -7,6 +7,7 @@ import { HEROES } from '../mock-heros';
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.scss']
 })
+
 export class HeroesComponent {
   hero: Hero = {
     id: 1,
@@ -18,7 +19,6 @@ export class HeroesComponent {
   selectedHero!: Hero;
 
   onSelectedHero(hero: Hero){
-    debugger;
     this.selectedHero = hero;
   }
 }
