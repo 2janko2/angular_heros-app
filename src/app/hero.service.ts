@@ -7,9 +7,10 @@ import { HEROES } from './mock-heros';
 @Injectable({
   providedIn: 'root'
 })
+
 export class HeroService {
 
-  constructor(public messageService: MessageService) {
+  constructor(private messageService: MessageService) {
 
    }
 
